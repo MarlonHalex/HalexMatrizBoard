@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 </head>
 <body>
     <div>
@@ -22,6 +23,7 @@
 
                 </div>
             </section><!-- Navigation End-->
+
             <section class="main"><!-- Main -->
                 <div class="search"><!-- Search -->
                     <form action="">
@@ -105,17 +107,14 @@
 
                     <div class="project"><!-- Project 4 -->
                         <div class="category"></div>
-                        <h2>Graphic Design</h2>
-                        <p>Active Recently</p>
+                        <h2>Branding</h2>
+                        <p>3 days ago</p>
                         <ul class="activity">
-                            <li>Coming soon banner</li>
-                            <li>Book cover</li>
+                            <li>Branding shape</li>
                         </ul>
 
                         <div class="meta">
                             <div class="contributors">
-                                <img src="assets/img/marlon.jpg" alt="">
-                                <img src="assets/img/marlon.jpg" alt="">
                                 <img src="assets/img/marlon.jpg" alt="">
                             </div>
                             <span class="material-icons-outlined">more_vert</span>
@@ -124,30 +123,27 @@
 
                     <div class="project"><!-- Project 5 -->
                         <div class="category"></div>
-                        <h2>Graphic Design</h2>
-                        <p>Active Recently</p>
+                        <h2>Guidelines</h2>
+                        <p>5 days ago</p>
                         <ul class="activity">
-                            <li>Coming soon banner</li>
-                            <li>Book cover</li>
+                            <li>Make a brand</li>
                         </ul>
 
                         <div class="meta">
                             <div class="contributors">
                                 <img src="assets/img/marlon.jpg" alt="">
                                 <img src="assets/img/marlon.jpg" alt="">
-                                <img src="assets/img/marlon.jpg" alt="">
-                            </div>
+                           </div>
                             <span class="material-icons-outlined">more_vert</span>
                         </div>
                     </div><!-- Project 5 End -->
 
                     <div class="project"><!-- Project 6 -->
                         <div class="category"></div>
-                        <h2>Graphic Design</h2>
-                        <p>Active Recently</p>
+                        <h2>Photoshoot</h2>
+                        <p>1 week ago</p>
                         <ul class="activity">
-                            <li>Coming soon banner</li>
-                            <li>Book cover</li>
+                            <li>Get photo</li>
                         </ul>
 
                         <div class="meta">
@@ -163,10 +159,39 @@
                 </div><!-- Project List End -->
 
             </section><!-- Main End-->
-            <section class="secondary"><!-- Secondary -->
 
+            <section class="secondary"><!-- Secondary -->
+                <div class="chart">
+                    <h2>Total Project</h2>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
             </section><!-- Secondary End-->
         </div><!-- Dashboard End-->
+
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Completed',
+                        'Ongoing',
+                        'Stalled'
+                    ],
+                    datasets: [{
+                        label: 'My First Dataset',
+                        data: [300, 50, 100],
+                        backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 205, 86)'
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+            });
+            </script>
+
     </div>
 </body>
 </html>
