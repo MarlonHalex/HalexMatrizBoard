@@ -7,6 +7,10 @@
     <title>Halexistar Dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 </head>
@@ -14,7 +18,7 @@
     <div>
         <div class="dashboard"><!-- Dashboard -->
             <section class="navigation"><!-- Navigation -->
-                <img src="assets/img/apple-touch-icon.png" alt="logo">
+                <img src="assets/img/apple-touch-icon.png" alt="logo" class="logo">
                 <div>
                     <span class="material-icons-outlined">home</span>
                     <span class="material-icons-outlined">dashboard</span>
@@ -22,6 +26,9 @@
                     <span class="material-icons-outlined">settings</span>
 
                 </div>
+
+                <img src="assets/img/marlon.jpg" alt="User Image" class="user">
+
             </section><!-- Navigation End-->
 
             <section class="main"><!-- Main -->
@@ -165,6 +172,40 @@
                     <h2>Total Project</h2>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
+                <div class="recent_projects"><!-- Recent Projects -->
+                        <div class="listing">
+                            <div class="title">
+                                <div class="category"></div>
+                                <h2>Layouting</h2>
+                                <p>by Marlon Petri</p>
+                            </div>
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                        <div class="listing">
+                            <div class="title">
+                                <div class="category"></div>
+                                <h2>Photoshoot</h2>
+                                <p>by Julia</p>
+                            </div>
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                        <div class="listing">
+                            <div class="title">
+                                <div class="category"></div>
+                                <h2>Branding</h2>
+                                <p>by Ana</p>
+                            </div>
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                        <div class="listing">
+                            <div class="title">
+                                <div class="category"></div>
+                                <h2>Teste</h2>
+                                <p>by Marlon Petri</p>
+                            </div>
+                            <span class="material-icons-outlined">more_vert</span>
+                        </div>
+                </div><!-- Recent Projects -->
             </section><!-- Secondary End-->
         </div><!-- Dashboard End-->
 
