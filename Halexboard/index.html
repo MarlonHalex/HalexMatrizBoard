@@ -43,14 +43,14 @@
                     </div><!-- Search End -->
 
                     <div class="title">
-                        <h1>Tempo de Campanha</h1>
+                        <h1>Holding Time</h1>
                         <form action="#">
                             <label for="projects">Organizar por</label>
                             <select name="projects" id="projects">
-                                <option value="recent">Em produção</option>
-                                <option value="finished">Produzido</option>
-                                <option value="ongoing">Previsto</option>
-                                <option value="stalled">Atrasado</option>
+                                <option value="production">Em produção</option>
+                                <option value="produced">Produzido</option>
+                                <option value="previsto">Previsto</option>
+                                <option value="atrasado">Atrasado</option>
                             </select>
                         </form>
                     </div>
@@ -169,7 +169,7 @@
 
                 <section class="secondary"><!-- Secondary -->
                     <div class="chart">
-                        <h2>Total Project</h2>
+                        <h2>Status Produção</h2>
                         <canvas id="myChart" width="400" height="400"></canvas>
                         <div class="complete">
                             <h3>3 Completed</h3>
@@ -219,17 +219,19 @@
                     type: 'doughnut',
                     data: {
                         labels: [
-                            'Completed',
-                            'Ongoing',
-                            'Stalled'
+                            'Produzido',
+                            'Em Produção',
+                            'Previsto',
+                            'Atrasado'
                         ],
                         datasets: [{
                             label: 'My First Dataset',
-                            data: [300, 50, 100],
+                            data: [300, 50, 100, 30],
                             backgroundColor: [
-                            'rgb(255, 99, 132)',
+                            'rgb(12, 205, 87)',
                             'rgb(54, 162, 235)',
-                            'rgb(255, 205, 87)'
+                            'rgb(255, 205, 87)',
+                            'rgb(255, 99, 132)'
                             ],
                             hoverOffset: 4
                         }]

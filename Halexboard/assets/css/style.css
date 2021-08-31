@@ -4,6 +4,11 @@
     --halexblue1:#03658C;
     --halexgray1:#BFBFBF;
     --halexyellow1:#BFA34E;
+    --textcolor1: #07394d;
+    --produzido: #0ccd57;
+    --produzindo: #36a2eb;
+    --previsto: #ffcd57;
+    --atrasado: #ff6384;
 }
 h1 {
   color: var(--red);
@@ -14,7 +19,7 @@ h1 {
 }
 body{
     margin: 0px;
-    background-color:lightgray;
+    background-color:white;
 }
 .dashboard{
     padding: 0px 15px;
@@ -73,7 +78,7 @@ Main Project
 }
 .dashboard .main .search .notification{
     margin-top: 20px;
-    color: var(--halexblue1);
+    color: var(--textcolor1);
 }
 .dashboard .main .search .notification span:nth-child(1){
     margin-right: 15px;
@@ -86,7 +91,7 @@ Main Project
 }
 .dashboard .main .title h1{
     font-size: 35px;
-    color: var(--halexblue1);
+    color: var(--textcolor1);
     line-height:normal;
 }
 .dashboard .main .title form{
@@ -94,13 +99,13 @@ Main Project
 }
 .dashboard .main .title form label{
     margin-right: 15px;
-    color: var(--halexblue1);
+    color: var(--textcolor1);
     font-size: 16px;
 }
 .dashboard .main .title form select{
     font-size: 16px;
-    border-color: var(--halexblue1);
-    color: var(--halexblue1);
+    border-color: var(--textcolor1);
+    color: var(--textcolor1);
 }
 /*Project List*/
 .dashboard .main .project_list .project h2{
@@ -163,16 +168,16 @@ Main Project
     left: 0;
 }
 .category_color1{
-    background-color:tan !important ;
+    background-color:var(--produzido) !important ;
 }
 .category_color2{
-    background-color:rebeccapurple !important ;
+    background-color:var(--produzindo) !important ;
 }
 .category_color3{
-    background-color:sandybrown !important ;
+    background-color:var(--previsto) !important ;
 }
 .category_color4{
-    background-color:lightcyan !important ;
+    background-color:var(--atrasado) !important ;
 }
 /* ==================================
 Secondary Statistics
