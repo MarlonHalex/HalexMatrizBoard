@@ -167,6 +167,29 @@ Main Project
     position: absolute;
     left: 0;
 }
+.dashboard .main .project_list .project .GrupoEquipamento .titulo1{
+    color: white;
+    font-weight: bold;
+}
+.dashboard .main .project_list .project .GrupoEquipamento .dado1{
+    color: white;
+}
+.dashboard .main .project_list .project .GrupoLote .titulo2{
+    color: white;
+    font-weight: bold;
+}
+.dashboard .main .project_list .project .GrupoLote .dado2{
+    color: white;
+}
+.dashboard .main .project_list .project .GrupoData .titulo3{
+    color: white;
+    font-weight: bold;
+}
+.dashboard .main .project_list .project .GrupoData .dado3{
+    color: white;
+}
+
+
 .category_color1{
     background-color:var(--produzido) !important ;
 }
