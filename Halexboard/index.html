@@ -34,7 +34,7 @@
                 <section class="main"><!-- Main -->
                     <div class="search"><!-- Search -->
                         <form action="">
-                            <input type="text" name="search" id="search" placeholder="Search here">
+                            <input type="text" name="search" id="search" placeholder="Procurar">
                         </form>
                         <div class="notification">
                             <span class="material-icons-outlined">notifications</span>
@@ -45,12 +45,12 @@
                     <div class="title">
                         <h1>Tempo de Campanha</h1>
                         <form action="#">
-                            <label for="projects">Sort By</label>
+                            <label for="projects">Organizar por</label>
                             <select name="projects" id="projects">
-                                <option value="recent">Recent Project</option>
-                                <option value="finished">Finished Project</option>
-                                <option value="ongoing">Recent Project</option>
-                                <option value="stalled">Stalled Project</option>
+                                <option value="recent">Em produção</option>
+                                <option value="finished">Produzido</option>
+                                <option value="ongoing">Previsto</option>
+                                <option value="stalled">Atrasado</option>
                             </select>
                         </form>
                     </div>
@@ -234,6 +234,16 @@
                             hoverOffset: 4
                         }]
                     },
+                    options: {
+                        plugins: {
+                            legend: {
+                                display: true,
+                                labels: {
+                                    color: 'rgb(255, 255, 255)'
+                                }
+                            }
+                        }
+                    }
                 });
                 </script>
         </div>

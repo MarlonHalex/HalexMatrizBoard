@@ -1,10 +1,20 @@
+:root{
+    --halexpink1:#BF547B;
+    --halexpink2:#BF7892;
+    --halexblue1:#03658C;
+    --halexgray1:#BFBFBF;
+    --halexyellow1:#BFA34E;
+}
+h1 {
+  color: var(--red);
+}
 *{
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 body{
     margin: 0px;
-    background-color:aliceblue;
+    background-color:lightgray;
 }
 .dashboard{
     padding: 0px 15px;
@@ -17,7 +27,9 @@ Navigation
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color:var(--halexblue1);
 }
 .dashboard .navigation img.logo{
     width: 50px;
@@ -34,9 +46,8 @@ Navigation
     margin-left: 5px;
     margin-right: 5px;
     font-size: 30px;
-    color: #727272;
+    color: white;
 }
-
 .dashboard .navigation div{
     margin-top: 10px;
 }
@@ -51,8 +62,8 @@ Main Project
     width: 100%;
     font-size: 16px;
     padding: 10px 10px 10px 60px;
-    border: 1px solid #dadada;
-    background-color: rgba(0 0 0 / 0);
+    border: 1px solid --halexblue1;
+    background-color: white;
 }
 .dashboard .main .search form span{
     position: absolute;
@@ -62,6 +73,7 @@ Main Project
 }
 .dashboard .main .search .notification{
     margin-top: 20px;
+    color: var(--halexblue1);
 }
 .dashboard .main .search .notification span:nth-child(1){
     margin-right: 15px;
@@ -74,6 +86,7 @@ Main Project
 }
 .dashboard .main .title h1{
     font-size: 35px;
+    color: var(--halexblue1);
     line-height:normal;
 }
 .dashboard .main .title form{
@@ -81,21 +94,22 @@ Main Project
 }
 .dashboard .main .title form label{
     margin-right: 15px;
-    color: #727272;
+    color: var(--halexblue1);
     font-size: 16px;
 }
 .dashboard .main .title form select{
-    border: none;
     font-size: 16px;
-    background-color:rgba(0 0 0 / 0);
+    border-color: var(--halexblue1);
+    color: var(--halexblue1);
 }
 /*Project List*/
 .dashboard .main .project_list .project h2{
     font-size: 20px;
     line-height: 0;
+    color: white;
 }
 .dashboard .main .project_list .project p{
-    color: #727272;
+    color: whitesmoke;
 }
 .dashboard .main .project_list .project ul{
     list-style: none;
@@ -105,7 +119,7 @@ Main Project
 }
 .dashboard .main .project_list .project ul li{
     position: relative;
-    color: #727272;
+    color: lightgray;
     margin-left: 15px;
 }
 .dashboard .main .project_list .project ul li::before{
@@ -129,9 +143,12 @@ Main Project
     justify-content: space-between;
     margin-top: 50px;
 }
+.dashboard .main .project_list .project .meta .material-icons-outlined{
+    color: white;
+}
 .dashboard .main .project_list .project {
     padding: 20px 20px 20px 60px;
-    background-color: #fff;
+    background-color: var(--halexblue1);
     box-shadow: 1px 1px 40px rgba(0 0 0 / 0);
     margin-bottom: 20px;
     border-radius: 10px;
@@ -164,35 +181,48 @@ Secondary Statistics
 .dashboard .secondary .chart .complete {
     text-align: center;
     margin: 40px 0px ;
+    color: white;
 }
 .dashboard .secondary .chart .complete h3{
     line-height: 0px;
+    color: white;
+}
+.dashboard .secondary h2{
+    color: white;
 }
 .dashboard .secondary .chart .complete p{
-    color: #727272;
+    color: white;
+}
+
+.dashboard .secondary .chart .myChart{
+    color: white;
 }
 /*Recent Projects*/
 .dashboard .secondary .recent_projects .listing h2{
     line-height: 0px;
 }
 .dashboard .secondary .recent_projects .listing p{
-    color: #727272;
+    color: white;
 }
 .dashboard .secondary .chart{
-    background-color: #fff;
+    background-color: var(--halexblue1);
     padding: 15px;
     position: relative;
     margin-bottom: 30px;
+    border-radius: 16px;
 }
 .dashboard .secondary .recent_projects .listing{
     display: flex;
     justify-content: space-between;
+    color: white;
 }
+
 .dashboard .secondary .recent_projects{
-    background-color: #fff;
+    background-color: var(--halexblue1);
     padding: 15px 15px 15px 60px;
     position: relative;
     margin-bottom: 30px;
+    border-radius: 16px;
 }
 
 .dashboard .secondary .recent_projects .category{
